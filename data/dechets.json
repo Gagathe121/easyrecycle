@@ -1,0 +1,471 @@
+[    {
+      "objet": "Ampoule",
+      "categorie": "Verre/Plastique",
+      "poubelle": "Point de collecte (disponible à l’entrée des grandes surfaces)"
+    },
+    {
+      "objet": "Assiette en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Sac d’aspirateur",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Aliment périmé emballée",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Barquette en aluminium",
+      "categorie": "Métal",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bloc-notes",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Boîte d’allumettes",
+      "categorie": "Carton/Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Boîte ou paquet de céréales",
+      "categorie": "Carton/Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Boîte de conserve",
+      "categorie": "Métaux",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Boîte de médicaments (vide)",
+      "categorie": "Plastique/Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouchon en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouchon de liège",
+      "categorie": "Liège",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Bouteille d’eau",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouteille en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouteille en verre",
+      "categorie": "Verre",
+      "poubelle": "Conteneur à verre"
+    },
+    {
+      "objet": "Brosse à cheveux cassée",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Brosse à dents",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Coquille d'oeuf",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Caisse de vin en bois",
+      "categorie": "Bois",
+      "poubelle": "Déchetterie"
+    },
+    {
+      "objet": "Canette",
+      "categorie": "Métal",
+      "poubelle": "Poubelle jaune"
+    },
+        {
+      "objet": "Canette de soda",
+      "categorie": "Métaux",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Carte bancaire périmée",
+      "categorie": "Plastique",
+      "poubelle": "Auprès de votre organisme bancaire"
+    },
+    {
+      "objet": "Carton de céréales",
+      "categorie": "Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Carton de pizza",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Carton d’emballage",
+      "categorie": "Carton/Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Cartouche d'encre",
+      "categorie": "Plastique",
+      "poubelle": "Dépôt (disponible à l’entrée des grandes surfaces)"
+    },
+    {
+      "objet": "Cartouche de parfum",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Charbon de bois",
+      "categorie": "Organique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Clé cassée",
+      "categorie": "Métaux",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Copeaux de bois",
+      "categorie": "Bois",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Coquille d’œuf",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Coquilles de fruits de mer",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Couvercle de bocal",
+      "categorie": "Métaux",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Couvercle en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Déchets alimentaires cuisinés",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Disque de coton",
+      "categorie": "Textile",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Emballage alimentaire plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de biscuits",
+      "categorie": "Plastique/Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de bonbons",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de chocolat",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de film alimentaire",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Essuie-tout usagé",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Feuille ou papier d’aluminium",
+      "categorie": "Métaux",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Filtre de café",
+      "categorie": "Papier",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Film plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Pot de confiture",
+      "categorie": "Plastique",
+      "poubelle": "Conteneur à verre"
+    },
+    {
+      "objet": "Gobelet en carton (avec plastique)",
+      "categorie": "Carton/Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Gobelet en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Gant en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage cadeau (papier)",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Lacets de chaussures",
+      "categorie": "Textile",
+      "poubelle": "Benne à vêtements"
+    },
+    {
+      "objet": "Linge abîmé",
+      "categorie": "Textile",
+      "poubelle": "Benne à vêtements"
+    },
+    {
+      "objet": "Lunettes cassées",
+      "categorie": "Plastique/Verre",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Magazine",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Magazines",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Manteau cassé",
+      "categorie": "Textile",
+      "poubelle": "Benne à vêtements"
+    },
+    {
+      "objet": "Marc de café",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Ménage (poussière, miettes)",
+      "categorie": "Organique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Montre cassée",
+      "categorie": "Métaux/Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Mouchoirs usagés",
+      "categorie": "Papier",
+       "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Thé en vrac",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Petit pot en verre",
+      "categorie": "Verre",
+      "poubelle": "Conteneur à verre"
+    },
+    {
+      "objet": "Pot de yaourt",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de bonbons",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouteille en verre",
+      "categorie": "Verre",
+      "poubelle": "Conteneur à verre"
+    },
+    {
+      "objet": "Aspiration (sac d’aspirateur)",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Vieux chargeur de téléphone",
+      "categorie": "Plastique",
+      "poubelle": "En magasin spécialisé"
+    },
+    {
+      "objet": "Planche de bois",
+      "categorie": "Bois",
+      "poubelle": "Déchetterie"
+    },
+    {
+      "objet": "Essuie-tout ou sopalin usagé",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Magazines",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Sachets plastiques alimentaires",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Boîte d’allumettes",
+      "categorie": "Carton/Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Papier de soie",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+        {
+      "objet": "Rouleau de film plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Bouchon de bouteille en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+       {
+      "objet": "Déchets alimentaires cuisinés",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Pots de fleurs cassés",
+      "categorie": "Terre/Argile",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Gobelet en carton (avec plastique)",
+      "categorie": "Carton/Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Film plastique de vêtements",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Sachets de gel de silice",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Carte bancaire périmée",
+      "categorie": "Plastique",
+      "poubelle": "Auprès de votre organisme bancaire"
+    },
+    {
+      "objet": "Fleurs fânées",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    },
+    {
+      "objet": "Panier en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Déchetterie"
+    },
+    {
+      "objet": "Copeaux de bois",
+      "categorie": "Bois",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Bouteille d’eau en plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Litière animaux",
+      "categorie": "Métal",
+      "poubelle": "Poubelle noire"
+    },
+    {
+      "objet": "Film plastique",
+      "categorie": "Plastique",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Papier journal",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Magazine",
+      "categorie": "Papier",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Carton de céréales",
+      "categorie": "Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Emballage de biscuits",
+      "categorie": "Plastique/Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Rouleau de papier toilette vide",
+      "categorie": "Carton",
+      "poubelle": "Poubelle jaune"
+    },
+    {
+      "objet": "Caisse de vin en bois",
+      "categorie": "Bois",
+      "poubelle": "Déchetterie"
+    },
+    {
+      "objet": "Pelure ou épluchure de pomme",
+      "categorie": "Organique",
+      "poubelle": "Bac biodéchets"
+    }
+  ]

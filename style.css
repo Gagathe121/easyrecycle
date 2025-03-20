@@ -1,0 +1,137 @@
+/* Ici toute la mise en forme pour grands écrans , pour mobile c'est plus bas */
+header {
+  width: 100%; /* Prend toute la largeur de l'écran */
+  text-align: center;
+  padding: 20px 0; /* Espacement interne du header */
+  height: auto; /* Hauteur auto peut être ajustée en px */
+}
+
+ img {
+  width: 100%; /* Prend toute la largeur de l'écran */  
+  max-width: 300px; /* Taille maximale du logo */
+  height: auto; /* Maintient les proportions du logo */
+  margin-top: 100px; /* J'ai dû ajouter de l'espace au-dessus du logo - problème d'affichage */
+ }
+
+body {
+  font-size: 16px; /* Taille de base des polices */
+  /* Style de l'arrière-plan */
+  background-image:url('images/background.png'); /* Pour implémenter une image en arrière-plan */
+  background-size: cover; /* Pour couvrir toute la fenêtre */
+  background-position: center; /* Centrer l'image */
+  background-attachment: fixed; /* Garder l'image fixe lors du défilement */
+  background-repeat: no-repeat; /* Empêcher la répétition de l'image si plus petite que l'écran */
+  font-family: "Roboto", sans-serif; /* Police de caractères choisie Roboto, si pas dispo passe sur par défaut sans-sérif */
+  margin: 0; /* Pour enlever les marges par défaut */
+  padding: 0; /* Pour enlever les espacements internes par défaut */
+
+  /* Style de l'affichage du texte et des éléments de la page avec flexbox */
+  display: flex; /* Pour utiliser Flexbox et permet de supprimer la balise style de html ici pour tout centrer sur l'écran */
+  flex-direction: column; /* Pour aligner les éléments verticalement */
+  justify-content: center; /* Pour centrer les éléments verticalement */
+  align-items: center; /* Pour centrer les éléments horizontalement */
+  height: 100vh; /* Utilise toute la hauteur de l'écran */
+}
+
+h1 {
+  font-size: 2.5em; /* Taille standard des titres en % de la taille standard des polices définie plus haut 
+                    em = responsive, facilite la lisibilité en fonction de l'écran */
+}
+
+h2 {
+  font-size: 2em; /* Taille standard des sous-titres en % */
+}
+
+p {
+  color: green; /* Couleur du texte */
+  font-size: 1.2em; /* Taille de police en % */
+  margin: 10px 0; /* Marge standard en haut et en bas du paragraphe */
+  padding: 0 15px; /* Espacement pour éviter que le texte ne touche les bords de l'écran */
+}
+
+/* Styles pour le bouton */
+button {
+  padding: 10px 20px; /* Espacement interne du bouton */
+  background-color: #28a745; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure ici , pour ajouter une bordure : px , style (solid, dashed, double) , color */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris en main au survol */
+  font-size: 16px;  
+  transition: background-color 0.3s ease; /* Effet de transition sur la couleur */
+  width: 200px; /* Donne une largeur fixe au bouton */
+  margin-top: 15px; /* Un peu d'espace au-dessus du bouton */
+}
+
+/* Changement de style du bouton au survol */
+button:hover {
+  background-color: #218838; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Style du pied de page */
+footer {
+  background-color: #334e33; /* Couleur de fond du footer */
+  color: white; /* Couleur du texte */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  text-align: center; 
+  padding: 10px 0; 
+  font-size: 0.7em; /* Taille de police plus petite en % par rapport à la taille standard définie plus haut */
+  position: relative; /* Position relative pour le positionnement du footer */
+  bottom: 0; /* Positionne le footer en bas de la page */
+  margin-top: auto; /* Pour que le footer soit toujours en bas de la page */
+}
+
+footer p {
+  color:white; /* Force la couleur du pied de page en blanc car p est défini sur vert dans body */
+}
+
+/* Media Queries tout ce qui suit est pour adaptation sur les petits écrans (moins de 600px) */
+@media only screen and (max-width: 600px) {  
+  header {
+    padding: 10px 0;  /* Réduction standard de l'espacement du header pour les petits écrans */
+  }
+
+  h1 {
+    font-size: 1.8em; 
+  }
+
+  h2 {
+    font-size: 1.5em; 
+  }
+
+  header img {
+    width: 100%;  
+    max-width: 200px;
+    margin-top: 100px; /* J'ai dû ajouter de l'espace au dessus du logo pour éviter un problème d'affichage */ 
+  }
+
+    body {
+      font-size: 1em; /* Ajustement standard de la taille du texte pour mobile */
+      text-align: center; 
+      padding: 20px; /* Espacement standard interne pour les petits écrans */
+      background-image: url('images/background.png'); 
+      background-size: cover;  
+      background-position: center center;  
+      background-repeat: no-repeat;    
+  }
+
+  p {
+      font-size: 1em; 
+      margin: 10px 0; 
+      padding: 0 10px; /* Ajuste l'espacement pour éviter que le texte ne touche les bords */
+  }
+
+  button {
+      width: 70%; /* Ajustement de la taille du bouton , 100% = toute la largeur de l'écran */
+      font-size: 18px; /* Augmente la taille du texte du bouton pour la lisibilité */
+      padding: 15px; /* Espace autour du texte du bouton */
+      margin: 0 auto; /* Centre le bouton */
+      display: block; /* Pour que le margin soit pris en compte */ 
+      margin-top: 20px; /* Un peu d'espace au-dessus du bouton */
+  }
+
+  footer {
+    font-size: 0.8em; /* Réduit la taille du texte en % */
+    padding: 8px 0; 
+  }
+}
