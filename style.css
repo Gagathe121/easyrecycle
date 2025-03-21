@@ -68,6 +68,10 @@ button:hover {
   background-color: #218838; /* Couleur légèrement plus foncée au survol */
 }
 
+#resultat {
+  text-align: center; /* Assure que le texte dans #resultat est centré */
+}
+
 /* Style du pied de page */
 footer {
   background-color: #334e33; /* Couleur de fond du footer */
