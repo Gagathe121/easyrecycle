@@ -1,47 +1,63 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Empêche l'envoi réel du formulaire
+document.addEventListener("DOMContentLoaded", function() { // Attend que le DOM soit chargé avant execution du code 
 
-  // Récupère la saisie de l'utilisateur, la met en minuscule, enlève accents et caractères spéciaux
-  const dechet = document.querySelector("#dechet").value.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // Enlève les accents
-    .replace(/[^a-z0-9 ]/g, "")  // Enlève les caractères spéciaux
-    .split(" ") // Divise la saisie par mots
-    .map(mot => mot.trim()); // Élimine les espaces superflus
-
-  console.log("Saisie de l'utilisateur après nettoyage et séparation :", dechet); // Débogage
-
-  fetch('data/dechets.json') // Récupère le fichier JSON
-    .then(response => response.json())
-    .then(data => {
-      // Recherche dans chaque élément du JSON si tous les mots saisis par l'utilisateur sont présents
-      const resultat = data.find(item => {
-        // Nettoyage de l'objet du fichier JSON
-        const itemName = item.objet.toLowerCase()
-          .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Enlève les accents
-          .replace(/[^a-z0-9 ]/g, ""); // Enlève les caractères spéciaux
-
-        console.log("Nom de l'objet dans le JSON après nettoyage :", itemName); // Débogage
-
-        // On compare chaque mot de la saisie utilisateur avec le nom de l'objet
-        return dechet.every(mot => itemName.includes(mot)); // Vérifie si chaque mot de la saisie existe dans le nom de l'objet
-      });
-
-      const resultElement = document.querySelector("#resultat");
-
-      if (resultat) {
-        const poubelleValue = resultat.poubelle.replace(/^Poubelle\s+/i, ''); // Nettoie le texte de la poubelle
-        resultElement.innerHTML = `
-          <strong>Déchet trouvé :</strong><br>
-          <strong>Objet :</strong> ${resultat.objet} <br>
-          <strong>Catégorie :</strong> ${resultat.categorie} <br>
-          <strong>Poubelle :</strong> ${poubelleValue} <br>
-        `;
-      } else {
-        resultElement.innerHTML = "Désolé, nous n'avons pas trouvé ce déchet.<br> Veuillez indiquer la nature du déchet uniquement <br> (ex: 'pot','bouteille' ou'épluchures').";
-      }
-    })
-    .catch(error => {
-      console.error("Erreur de récupération du fichier JSON : ", error); // Affiche l'erreur si le fichier JSON n'est pas trouvé
-      document.querySelector("#resultat").innerHTML = "Une erreur est survenue, veuillez réessayer plus tard.";
-    });
+// === Gestion du bouton "À propos" ===
+document.getElementById("toggle-apropos").addEventListener("click", function() {
+  const apropos = document.getElementById("apropos-content");
+    if (apropos.style.display === "" || apropos.style.display === "none") { // Vérifie l'état actuel et bascule entre "none" et "block"
+    apropos.style.display = "block";
+    apropos.scrollIntoView({ behavior: "smooth" }); // Défilement vers le bas de la page pour afficher le texte
+  } else {
+    apropos.style.display = "none"; // Masque le texte par défaut
+  } 
 });
+
+  // === Gestion de la soumission du formulaire ===
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche l'envoi réel du formulaire
+    const champDechet = document.querySelector("#dechet");
+    const saisieUtilisateur = champDechet.value;
+    const dechetMots = saisieUtilisateur // Nettoyage et découpage des mots
+      .split(" ")
+      .map(mot => nettoyerTexte(mot.trim()));
+
+    console.log("Saisie utilisateur après nettoyage :", dechetMots); // Debug
+
+    fetch('data/dechets.json')
+      .then(response => response.json())
+      .then(data => {
+        const resultat = data.find(item => {
+        const itemNettoye = nettoyerTexte(item.objet);
+        console.log("Objet JSON nettoyé :", itemNettoye); // Debug
+        return dechetMots.every(mot => itemNettoye.includes(mot));
+        });
+
+        const resultElement = document.querySelector("#resultat");
+        if (resultat) {
+        const poubelleClean = resultat.poubelle.replace(/^Poubelle\s+/i, '');
+        resultElement.innerHTML = `
+            <strong>Déchet trouvé :</strong>
+            ${resultat.objet} <br>
+            <strong>Poubelle :</strong> ${poubelleClean} <br> 
+           <p class="petite-phrase">Si ce déchet n'est pas le vôtre, veuillez préciser objet, matière <em>(ex: 'pot de yaourt en verre')</em></p>
+`;
+        } else {
+          resultElement.innerHTML = `
+            Désolé, nous n'avons pas trouvé ce déchet.<br><em>Veuillez indiquer la nature du déchet uniquement <br>
+            (ex: "pot", "bouteille" ou "épluchures").</em>                       `;
+        }
+
+        champDechet.value = ""; // Vide le champ de saisie après traitement
+      })
+      .catch(error => {
+        console.error("Erreur de récupération du fichier JSON : ", error);
+        document.querySelector("#resultat").innerHTML = "Une erreur est survenue, veuillez réessayer plus tard.";
+      });
+  });
+});
+
+// === Fonction utilitaire pour nettoyer les textes ===
+function nettoyerTexte(texte) {
+  return texte.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // Enlève les accents
+    .replace(/[^a-z0-9 ]/g, "");  // Enlève les caractères spéciaux
+}

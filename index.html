@@ -1,5 +1,5 @@
 <!doctype html> <!-- Déclaration du type de document -->
-<html lang="fr"> <!-- Balise racine précisant la langue d'origine du document pour l'accessinilité -->
+<html lang="fr"> <!-- Balise racine précisant la langue d'origine du document pour l'accessibilité -->
 
 <head> <!-- Balise d'en-tête ne contient que des métadonnées (lien vers les styles css les scripts et les infos de page) -->
     <meta charset="utf-8" />  <!-- Encodage des caractères en UTF-8 permet d'afficher tous les caractères correctement -->
@@ -17,9 +17,9 @@
      <h2>Le tri, enfin sans prise de tête!</h2> 
   </header>
 
-      <p>Trop de bacs, trop de règles, trop de questions...</p>
-      <p>Qui n'a jamais hésité devant un emballage en se demandant "ça va où?"</p>
-      <p>Easy Recycle simplifie le tri sélectif pour toi!</p>
+      <p><em>"Ça va dans quelle poubelle ?!"</em></p>
+      <p>Qui n'a jamais hésité devant un emballage ?</p>
+      <p>Easy Recycle vous simplifie le tri sélectif !</p>
 
    <!-- Formulaire pour saisir un nom de déchet -->
 <form action="#" method="POST" style="text-align: center; margin-top: 20px;"> <!-- action="#" permet de rester sur la même page , method post = données du formulaire envoyées au serveur via http -->
@@ -27,14 +27,18 @@
   <input type="text" id="dechet" name="dechet" placeholder="Ex : pot de yaourt" required> <!-- required permet de rendre le champ obligatoire -->
   <button type="submit">Trier</button> <!-- Bouton de validation -->
 </form>
+<p class="petite-phrase"><em>Veuillez noter que les règles de tri sélectif peuvent varier d'une commune à l'autre.</em></p>
 <p id="resultat"></p> <!-- Paragraphe ici vide pour afficher le résultat du tri -->
 
 <footer>   <!-- Balise de pied de page -->
-    <p>Ce site est un projet test reposant sur une base de données non exhaustive.</p>
-    <p>Veuillez noter que les règles de tri sélectif peuvent varier d'une commune à l'autre.</p> 
+  <p>&copy; 2025 | Aml | Tous droits réservés</p>
+  <span id="toggle-apropos" class="apropos-link">À propos</span> <!-- lien pour afficher le texte à propos -->
+  <div id="apropos-content" class="apropos-content"> <!-- Contenu à propos masqué par défaut -->
+    <p>Ce site est réalisé avec HTML, CSS et Javascript.</p>
+    <p>C'est un projet test reposant sur une base de données non exhaustive.</p> 
     <p>Des erreurs peuvent exister et les informations sont susceptibles d'être mises à jour.</p>
-    <br 
-      <p>&copy; 2025 Site réalisé avec HTML, CSS et JavaScript - By Aml</p>
+  </div>
+      
 </footer>
 
 <script src="script.js"></script> <!-- Inclusion du fichier JavaScript toujours en dernier -->

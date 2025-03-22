@@ -1,4 +1,4 @@
-/* Ici toute la mise en forme pour grands écrans , pour mobile c'est plus bas */
+/* Ici toute la mise en forme pour écran d'ordinateur , pour mobile c'est plus bas */
 header {
   width: 100%; /* Prend toute la largeur de l'écran */
   text-align: center;
@@ -45,8 +45,19 @@ h2 {
 p {
   color: green; /* Couleur du texte */
   font-size: 1.2em; /* Taille de police en % */
+  font-weight: bold; /* Gras */
   margin: 10px 0; /* Marge standard en haut et en bas du paragraphe */
   padding: 0 15px; /* Espacement pour éviter que le texte ne touche les bords de l'écran */
+}
+.petite-phrase {
+  font-size: 0.8em;  /* Réduit la taille du texte */
+  font-weight: normal; /* Retire le gras */
+}
+
+/* Styles pour le formulaire */
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Styles pour le bouton */
@@ -78,7 +89,7 @@ footer {
   color: white; /* Couleur du texte */
   width: 100%; /* Prend toute la largeur de l'écran */
   text-align: center; 
-  padding: 10px 0; 
+  padding: 10px 0;  
   font-size: 0.7em; /* Taille de police plus petite en % par rapport à la taille standard définie plus haut */
   position: relative; /* Position relative pour le positionnement du footer */
   bottom: 0; /* Positionne le footer en bas de la page */
@@ -87,6 +98,23 @@ footer {
 
 footer p {
   color:white; /* Force la couleur du pied de page en blanc car p est défini sur vert dans body */
+}
+
+.apropos-link {
+  color: #ffffff; /* Blanc, comme ton footer */
+  text-decoration: underline; /* Souligné comme un lien */
+  cursor: pointer; /* Curseur en main */
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1em; /* Légèrement plus petit si tu veux */
+}
+
+.apropos-link:hover {
+  color: #ccc; /* Couleur plus claire au survol */
+}
+
+#apropos-content { /* Contenu de la page À propos masqué par défaut */
+  display: none;
 }
 
 /* Media Queries tout ce qui suit est pour adaptation sur les petits écrans (moins de 600px) */
@@ -136,6 +164,7 @@ footer p {
 
   footer {
     font-size: 0.8em; /* Réduit la taille du texte en % */
-    padding: 8px 0; 
+    padding: 8px 0;
+    width: 100%; 
   }
 }
